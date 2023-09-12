@@ -1,2 +1,4 @@
-# name: test
+name: test
+test: 
+  run: npm run install
 # Fill in the necessary code to run the jest test script whenever a pull request is opened or updated    
