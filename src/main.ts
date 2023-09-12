@@ -1,6 +1,5 @@
 // Add
 export function add(num1: number, num2: number): number {
-    let temp: number = 0;
     return num1 + num2;
 }
 
