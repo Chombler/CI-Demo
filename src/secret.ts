@@ -71,7 +71,6 @@ export function secret_5(_num1: number): number {
             fib1 = fib2;
             fib2 = result;
         }
-    
         return result;
         }
 }
