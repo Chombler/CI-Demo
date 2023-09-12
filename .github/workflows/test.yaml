@@ -1,2 +1,30 @@
 # name: test
 # Fill in the necessary code to run the jest test script whenever a pull request is opened or updated    
+name: test
+on:
+  pull_request:
+    branches:
+      - main
+    types: 
+      - opened 
+      - synchronize
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Use node 18.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.X
+
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run Jest
+        run: npm run test -- --config=./test/jest.config.ts
+
+        
