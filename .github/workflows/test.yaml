@@ -1,2 +1,16 @@
 # name: test
-# Fill in the necessary code to run the jest test script whenever a pull request is opened or updated    
+# Fill in the necessary code to run the jest test script whenever a pull request is opened or updated
+name: test
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: npm test
