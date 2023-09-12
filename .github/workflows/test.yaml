@@ -1,4 +1,3 @@
-# Fill in the necessary code to run the jest test script whenever a pull request is opened or updated
 name: test
 on:
   pull_request:
