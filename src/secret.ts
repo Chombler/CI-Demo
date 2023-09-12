@@ -1,4 +1,3 @@
-import * from Math;
 // This file contains the secret functions that you need to implement.
 // In no particular order, they are:
 // - Exponent -
@@ -60,7 +59,7 @@ export function secret_4(num1: number): number {
 export function secret_5(num1: number): number {
     let fib = 0;
     let fibnext = 1;
-    for(let i = 0; i <= num; i++){
+    for(let i = 0; i <= num1; i++){
         fib = fib + fibnext;
         fibnext = fib + fibnext;
     }
