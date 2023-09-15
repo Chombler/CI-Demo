@@ -64,9 +64,10 @@ export function secret_4(_num1: number): number {
 // 7 -> 13
 // All inputs must be >= 1
 export function secret_5(_num1: number): number {
-    if (_num1 < 1) {
-        return 1;
+    let fib = 0;
+    let fibnext = 1;
+    for(let i = 0; i <= num; i++){
+        fib = fib + fibnext;
+        fibnext = fib + fibnext;
     }
-
-    return secret_5(_num1 - 1) + secret_5(_num - 2);
 }
